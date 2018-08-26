@@ -1,6 +1,6 @@
 # SFDC-CompareTables
 
-A sketch of a script to compare tables between two salesforce orgs, the collection `tablesForComparison` is initilaised with a list of sobjects to retrieve, a key to compare them by (may be a single field or a collection of keys) along with a `whereClause` to optionally filter out records for comparison.
+A sketch of a script to compare tables between two salesforce orgs, the collection `tablesForComparison` is initilaised with a list of sobjects to retrieve, a key to compare them by (may be a single field or an ordered collection of fields) along with a `whereClause` to optionally filter out records for comparison.
 
 `instancesToCompare` should contain the login credentials to two salesforce orgs, the assumption is that the first entry is the location of any changes, and the second is the org to bring into line with the first, a dev org and then a production org is probably typical usage.
 
