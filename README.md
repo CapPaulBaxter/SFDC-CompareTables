@@ -4,7 +4,9 @@ A sketch of a script to compare tables between two salesforce orgs, the collecti
 
 `instancesToCompare` should contain the login credentials to two salesforce orgs, the assumption is that the first entry is the location of any changes, and the second is the org to bring into line with the first, a dev org and then a production org is probably typical usage.
 
-When executed the script will query for all creatable fields in the table in either org, dervice a set of common fields and export both tables to csv files.
+When executed the script will query for all creatable fields in the table in either org, derive a set of common fields and export both tables to csv files.
+
+After export the two tables are compared to generate difference statistics and a summary of the mismatch types present between the two tables.
 
 # Example output 
 
